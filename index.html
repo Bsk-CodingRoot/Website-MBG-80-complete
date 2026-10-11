@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head> 
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Press+Start+2P&display=swap');
+
+    @keyframes borderkedip {
+      from {
+        border: 3px black solid;
+      }
+      0% {
+        border: 3px red solid;
+      }      
+      50% {
+        border: 3px #00f600 solid;
+      }
+      75% {
+        border: 3px blue solid;
+      }
+      to {
+        border: 3px red solid;
+      }
+    }
+
+    @keyframes tulisankedip {
+      from {
+        color: black;
+      }
+      0% {
+        color: blue;
+      }      
+      50% {
+        color: #0bfd0b;
+      }
+      75% {
+        color: red;
+      }
+      to {
+        color: blue;
+      }
+    }
+
+    
+    /* ANIMATION - body -  */
+
+    
+    h1 {
+      font-family: 'Press Start 2P';
+      
+    }
+
+    p {
+      font-family: 'Montserrat';
+      
+    }
+    
+    body {
+      background: linear-gradient(95deg, skyblue, #85fcff);
+      
+    }
+    .home {
+      text-align: center;
+      justify-content: center;
+    }
+    .home img {
+      transform: translateX(-125px);
+      width: 75px;
+      height: 75px;
+    }
+    .home h1 {
+      transform: translate(50px, -60px);
+      font-size: 25px;
+      
+    }
+
+    .home #btnfeed {
+      font-family: 'Montserrat';
+       padding: 5px 10px;
+       font-size: 16px;
+       cursor: pointer;
+       background: #697ed7;
+       color: #fff;
+       border: none;
+       border-radius: 5px;
+       transform: translate(175px, -295px);
+    } 
+
+    .home #cred {
+      font-family: 'Montserrat';
+      padding: 5px 10px;
+      font-size: 16px;
+      cursor: pointer;
+      background: #4d4f54;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      transform: translate(-25px, -295px);
+
+    }
+    .home #btnmasuk {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background: #697ed7;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      transform: translate(-85px);
+
+    }
+
+
+
+    /* Contact - Home */
+    
+    
+    .contact {
+      transform: translateX(-5px);
+      display: none;
+      max-width: 400px;
+      border: 3px black solid;
+      padding: 50px;
+      text-align: center;
+      background: linear-gradient(90deg, #ffffff, grey);
+      
+    }
+
+    .contact #submit {
+      font-family: 'Montserrat';
+       transform: translate(0px, 5px);
+       padding: 10px 20px;
+       font-size: 16px;
+       cursor: pointer;
+       background: #697ed7;
+       color: #fff;
+       border: none;
+       border-radius: 5px;
+   }
+    .contact #btnfeedre {
+      font-family: 'Montserrat';
+      display: inline-block;
+      transform: translate(0px, 10px);
+       padding: 10px 20px;
+       font-size: 16px;
+       cursor: pointer;
+       background: #4d4e52;
+       color: #fff;
+       border: none;
+       border-radius: 5px;
+      
+    }
+
+    .contact input {
+      font-family: 'Montserrat';
+      margin: 5px;
+      transform: translateX(0px)
+    }
+    .contact textarea {
+      font-family: 'Montserrat';
+      margin: 5px;
+      transform: translateX(0px)
+    }
+
+    /* contact - credits */
+      
+    .credits {
+      transform: translateX(-5px);
+      animation: borderkedip 3s ease infinite;
+      display: none;
+      max-width: 400px;
+      border: 3px black solid;
+      padding: 50px;
+      text-align: center;
+      background: linear-gradient(90deg, #6a6a6a, #c2bdbd);
+    }
+
+    .credits h1 {
+      font-size: 15px;
+    }
+
+    .credits #c0 {
+      animation: tulisankedip 3s ease-in infinite;
+    }
+    
+    .credits #c1 {
+      color: #24ff00;
+      
+    }
+
+    .credits #c2 {
+      color: #0d7edd;
+    }
+
+    .credits #c3 {
+      color: #dede0f;
+    }
+    .credits #c4 {
+      color: #f63500;
+    }
+    .credits #c5 {
+      color: #f69100
+    }
+
+    .credits #kembalifromcred {
+       padding: 10px 20px;
+       font-size: 16px;
+       cursor: pointer;
+       background: #697ed7;
+       color: #fff;
+       border: none;
+       border-radius: 5px;
+      transform: translateY(100px);
+    }
+
+    /* Credit - dalam */
+
+    .dalam {
+      display: none;
+      text-align: center;
+      height: 1000px;
+    }
+
+    .dalam #btnkembali {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background: #646464;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+    }
+    .dalam #mbg1 {
+      width: 250px;
+      height: 150px;
+    }
+    .kotak {
+      transform: translate(-0px, 5px);
+      display: inline-block;
+      max-width: 400px;
+      border: 3px black solid;
+      padding: 50px;
+      text-align: center;
+    }
+    .kotak a {
+      color: #ff303e;
+    }
+    .kotak li {
+      transform: translate(-50px);
+      font-family: 'Montserrat';
+      margin: 5px;
+    }
+    footer #btntomedsos {
+      transform: translateY(20px);
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background: #697ed7;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+    }
+
+    /* Dalam - Medsos */
+
+    .medsos {
+      transform: translateX(-5px);
+      display: none;
+      max-width: 400px;
+      border: 3px black solid;
+      padding: 50px;
+      text-align: center;
+    }
+    .medsos button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background: #697ed7;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+    }
+    .medsos #btnkembalifrommedsos {
+      transform: translateY(10px);
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background: #444444;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+    }
+
+  </style>
+<body>
+
+  <div class="contact" id="cotact">
+    <h1>Feedback</h1>
+    <form id="myForm">
+  <input type="text" id="name" placeholder="Nama" required>
+  <input type="email" id="mail" placeholder="Email" required>
+  <textarea id="msg" rows="4" placeholder="Pesan" required></textarea>
+  <button type="submit" id="submit">Kirim</button>
+
+</form>
+    <button onclick="kembalifromfeed()" id="btnfeedre">Kembali</button>
+
+<script src="telegram.js"></script>
+<script>
+  document.getElementById('myForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const nama = document.getElementById('name').value;
+    const email = document.getElementById('mail').value;
+    const pesan = document.getElementById('msg').value;
+
+    // Tinggal panggil fungsinya doang, bro! Gak perlu nulis fetch panjang lagi.
+    kirimKeTelegram(nama, email, pesan, function(hasil) {
+      if(hasil.ok) {
+        alert("Feedback berhasil dikirim ke costumer service!, Terimakasih telah mengirim umpan balik");
+        document.getElementById('myForm').reset();
+      } else {
+        alert("Gagal terkirim!");
+      }
+    });
+  });
+</script>
+
+  </div>
+
+
+
+
+
+<!-- PEMISAH -->
+  
+  <div class="home" id="home">
+    <img src="logo.jpg">
+    <h1>Menu utama</h1>
+    <p>
+      Selamat datang di web MBG. <br>
+      Website ini dibuat oleh DestaTerbang, silahkan tekan <mark>credit</mark> untuk melihat creator dan silahkan tekan <mark>feedback</mark> untuk melaporkan masalah <br>
+      Tekan tombol mulai untuk masuk ke dalam website
+      
+    </p>
+    <button onclick="feedback()" id="btnfeed"> Feedback</button>
+    <button onclick="creator()" id="cred">Credits</button>
+    <button onclick="masukkedalamwebsite()" id="btnmasuk">Masuk</button>
+    
+  </div>
+
+   <!-- PEMISAH -->
+  
+  <div class="credits" id="credit">
+    <h1 id="c0">Creator: DestaTerbang</h1>
+    <h1 id="c1">Ide: DestaTerbang</h1>
+    <h1 id="c2">Senpai: Gemini</h1>
+    <h1 id="c3">Fullstack: DestaTerbang</h1>
+    <h1 id="c4">Frontend: DestaTerbang</h1>
+    <h1 id="c5">Backend: DestaTerbang/Gemini</h1>
+    <button onclick="kembalifromcredit()" id="kembalifromcred">Kembali</button>
+  </div>
+
+  <!-- Pemisah -->
+  
+  <div class="dalam" id="dalam">
+    <img src="mbg.jpg" id="mbg1">
+    <h1>Apa itu MBG</h1>
+    <p>MBG adalah singkatan dari Makan Bergizi Gratis, sebuah program nasional unggulan pemerintah Indonesia yang diluncurkan di bawah masa pemerintahan Presiden Prabowo Subianto. Program ini resmi berjalan secara bertahap sejak 6 Januari 2025 dengan tujuan utama <mark>meningkatkan kualitas sumber daya manusia (SDM) menuju visi Indonesia Emas 2045.</mark></p>
+    <a href="https://mediakeuangan.kemenkeu.go.id/article/show/pemerintah-salurkan-makan-bergizi-gratis-mbg-ini-sasaran-utama-penerimanya">Tekan mengenai MBG lebih lanjut</a>
+    <button onclick="kembalifromdalam()" id="btnkembali">
+      Kembali
+    </button>
+    <div class="kotak">
+      <h1>
+        Seputar MBG
+      </h1>
+      <ul>
+        <li>
+          <a href="">Anggaran MBG</a>
+        </li>
+        <li>
+          <a href="">Aplikasi Webview PPID BGN 1.2 Triliun</a>
+        </li>
+        <li>
+          <a href="">Korban MBG</a>
+        </li>
+        <li>
+          <a href="">MBG benmanfaat atau tidak</a>
+        </li>
+      </ul>
+    </div>
+    <footer>
+      <button onclick="Mediasosial()" id="btntomedsos">Lihat</button>
+    </footer>
+  </div>
+  <div class="medsos" id="medsos">
+    <h1>Kunjungi Medsos Kreator Web</h1>
+   <button onclick="tiktok()">Tiktok</button>
+    <button onclick="youtube()">Youtube</button>
+    <button onclick="kembalifrommedsos()" id="btnkembalifrommedsos">Kembali</button>
+  </div>
+  
+</body>
+  <script>
+    const body = document.getElementById('body')
+    const home = document.getElementById('home')
+    const feed = document.getElementById('cotact')
+    const credit = document.getElementById('credit')
+    const dalam = document.getElementById('dalam')
+    const medsos = document.getElementById('medsos')
+    function feedback() {
+      feed.style.display = 'inline-block'
+      home.style.display = 'none'
+    }
+    function kembalifromfeed() {
+      feed.style.display = 'none'
+      home.style.display = 'inline-block'
+    }
+    function creator() {
+      home.style.display = 'none'
+      credit.style.display = 'inline-block'
+    }
+    function kembalifromcredit() {
+      credit.style.display = "none"
+      home.style.display = "inline-block"
+    }
+    function masukkedalamwebsite() {
+      home.style.display = "none"
+      dalam.style.display = "inline-block"
+    }
+    function kembalifromdalam() {
+      dalam.style.display  = "none"
+      home.style.display = "inline-block"
+    }
+    function Mediasosial() {
+      dalam.style.display = "none"
+      medsos.style.display = "inline-block"
+    }
+    function tiktok() {
+      window.location.href = "https://tiktok.com/@destawibiabadi"
+    }
+    function youtube() {
+      window.location.href = "https://youtube.com/@drd.mc_gaming?si=UCCUE3MYLIQ39_hZ"
+    }
+    function kembalifrommedsos() {
+      medsos.style.display = "none"
+      dalam.style.display = "inline-block"
+    }
+  </script>
+</html>
